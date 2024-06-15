@@ -10,7 +10,7 @@
 @media screen and (max-width: 780px) {
     .hero {
         writing-mode: vertical-rl;
-        left: 10rem;
+        left: 1.3em;
         top: 6rem;
     }
     

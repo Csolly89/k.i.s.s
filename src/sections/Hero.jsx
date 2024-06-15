@@ -24,11 +24,14 @@ const Hero = () => {
             {/* first container with Header and buttons */}
             <div className="grid grid-cols-1 sm:grid-cols-12 mt-8 ">
                 <div className="col-span-7 place-self-center text-center sm:text-left">
-                    <h1 className='font-Alex xl:text-[25rem] md:text-[18rem] text-[16rem] text-text hero relative xl:ml-[46%] xl:pb-[.2em] z-10'> Solly</h1>
-                    <p className=" text-secondary font-Chivo relative z-20 text-center xl:bottom-[8em] xl:left-[2em] md:left-[2em] xl:text-3xl md:text-5xl flex flex-wrap xl:w-[80%] md:w-[30%]">
-                        I am a Jr Developer looking to make my mark with Responsive and Fun designs across the industry and internet!
-                    </p>
-                    <div className=''>
+                    <h1 className='font-Alex xl:text-[25rem] md:text-[18rem] text-[10rem] hero relative xl:ml-[46%] xl:pb-[.2em] z-10 text-text'> Solly</h1>
+                    <div className='relative top-[12vh]'>
+                        <h2 className='font-Alex text-8xl text-primary relative xl:bottom-[2.5em] xl:left-16 top-[0em]'>Welcome</h2>
+                        <p className=" text-secondary font-Hind relative z-20 text-center xl:bottom-[8em] xl:left-[5em] md:left-[2em] xl:text-3xl md:text-5xl flex flex-wrap xl:w-[80%] md:w-[30%]">
+                            I am a Jr Developer looking to make my mark with Responsive and Fun designs across the industry and internet!
+                        </p>
+                    </div>
+                    <div className='relative top-[20vh]'>
                         <ul className='flex flex-row justify-center'>
                             {social.map((item, i) => (
                                 <a className="" key={i} to={item.path} target="_blank" rel="noopener noreferrer">
@@ -37,7 +40,7 @@ const Hero = () => {
                             ))
                             }
                         </ul>
-                        <button className="w-full sm:w-fit rounded-tr-full rounded-bl-full ">
+                        <button className="w-full rounded-tr-full rounded-bl-full bg ">
                             <span className="text-text">
                                 Download Cv
                             </span>
@@ -45,7 +48,7 @@ const Hero = () => {
                     </div>
                 </div>
                 {/* 2nd container with Logo/img  */}
-                <div className="xl:col-span-5 md:col-span-3 col-span-1 place-self-center xl:pr-[15%] lg:pr-[40%] xl:pt-10">
+                <div className="xl:col-span-5 md:col-span-3 col-span-1 place-self-center xl:pr-[15%] lg:pr-[40%] xl:pt-10 relative bottom-[30em] md:bottom-0 right-6 md:right-0">
                     <div className="rounded-full bg-gradient-to-br from-background to-secondary w-[80vw] lg:w-[60vw] xl:w-[45vw] relative mt-4">
                     <img className='bg-gradient-to-t from-black via-slate-900 to-transparent rounded-b-3xl aspect-auto ' src={Hulk} alt="Hulk figure with arms crossed" />
 					</div>
