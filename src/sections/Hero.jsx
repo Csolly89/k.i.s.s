@@ -27,7 +27,7 @@ const Hero = () => {
                     <h1 className='font-Alex xl:text-[25rem] md:text-[18rem] text-[10rem] hero relative xl:ml-[46%] xl:pb-[.2em] z-10 text-text'> Solly</h1>
                     <div className='relative top-[12vh]'>
                         <h2 className='font-Alex text-8xl text-primary relative xl:bottom-[2.5em] xl:left-16 top-[0em]'>Welcome</h2>
-                        <p className=" text-secondary font-Hind relative z-20 text-center xl:bottom-[8em] xl:left-[5em] md:left-[2em] xl:text-3xl md:text-5xl flex flex-wrap xl:w-[80%] md:w-[30%]">
+                        <p className=" text-secondary font-Hind relative text-center xl:bottom-[8em] xl:left-[5em] md:left-[2em] xl:text-3xl md:text-5xl flex flex-wrap xl:w-[80%] md:w-[30%]">
                             I am a Jr Developer looking to make my mark with Responsive and Fun designs across the industry and internet!
                         </p>
                     </div>

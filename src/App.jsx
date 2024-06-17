@@ -14,9 +14,9 @@ function App() {
     <div>
       <section id="#" className=""> <Hero /> </section>
       <section id="about" className="relative bottom-5" > <About /> </section>
-      <section id="services" className="" > <Exp /> </section>
-      <section id="projects" className=""> <Projects /> </section>
-      <section id="contact" className=""> <Contact /> </section>
+      {/* <section id="services" className="" > <Exp /> </section> */}
+      {/* <section id="projects" className=""> <Projects /> </section> */}
+      {/* <section id="contact" className=""> <Contact /> </section> */}
     </div>
     </div>
   )

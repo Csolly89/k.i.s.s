@@ -1,4 +1,4 @@
-import React, { useTransition, useState} from 'react'
+import React, { useTransition, useState } from 'react'
 import TabButton from '../components/Tabs'
 
 import Higgins from "../public/Higgins.png"
@@ -14,23 +14,23 @@ const projects = [
                 </a>
                 <img src={Higgins} alt="screenshot of Previous jobs" />
                 <p> "A Single man excavation company looking for single page application website with SEO strategies and free email service to limit outoing costs to help bring in customers while maintaining low monthly costs."</p>
-                
+
             </div>
         )
     },
-]  
+]
 
 
 const Projects = () => {
-    const [tab,setTab] = useState('higgins')
-    const [isPending,startTransition] = useTransition()
+    const [tab, setTab] = useState('higgins')
+    const [isPending, startTransition] = useTransition()
 
     const handleTabChange = (id) => {
         startTransition(() => {
             setTab(id)
         })
     }
-    
+
     return (
         <>
             <section className="relative">
