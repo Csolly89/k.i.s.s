@@ -18,11 +18,11 @@
 
 @layer base {
     :root {
-        --text: #1f1805;
-        --background: #fbf7e5;
-        --primary: #976802;
-        --secondary: #7ae873;
-        --accent: #22d35a;
+        --text: #0f0401;
+        --background: #fff6f1;
+        --primary: #f75b11;
+        --secondary: #cffb82;
+        --accent: #81f94c;
     }
     .dark {
         --text: #faf3e0;
