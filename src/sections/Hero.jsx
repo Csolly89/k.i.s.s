@@ -42,7 +42,7 @@ const Hero = () => {
                                 ))
                                 }
                             </ul>
-                            <button className="rounded-3xl bg-gradient-to-tr from-secondary to-primary p-2 border-2 border-text border-opacity-0">
+                            <button className="rounded-3xl bg-gradient-to-tr from-secondary to-primary p-2 border-2 border-text border-opacity-0 m-3">
                                 <span className="text-background">
                                     Download Cv
                                 </span>
@@ -51,7 +51,7 @@ const Hero = () => {
                     </div>
                 </div>
                 {/* 2nd container with Logo/img  */}
-                <div className="xl:col-span-5 md:col-span-3 col-span-1 place-self-center xl:pr-[15%]  xl:pt-10 relative bottom-[32em] md:bottom-0 ">
+                <div className="xl:col-span-5 md:col-span-3 col-span-1 place-self-center xl:pr-[15%]  xl:pt-10 relative bottom-[33em] md:bottom-0 ">
                     <div className="rounded-full bg-gradient-to-br from-background to-secondary w-[80vw] lg:w-[60vw] xl:w-[45vw] relative mt-">
                     <img className='bg-gradient-to-t from-black via-slate-900 to-transparent rounded-b-3xl aspect-auto ' src={Hulk} alt="Hulk figure with arms crossed" />
 					</div>

@@ -67,19 +67,19 @@ const Navbar = () => {
             </div>
             <div className="transition ease-in-out">
             {navbarOpen ? (
-                <div className="absolute right-0 flex justify-end before:bg-gradient-to-r before:from-transparent before:to-secondary before:w-[35dvw] before:opacity-50 ">
-                <ul className="text-text h-[calc(100vh-3.5rem)] w-80 flex flex-col gap-5 justify-center items-center text-3xl z-10 bg-background md:hidden ">
-                    {navLinks.map((link, index) => (
-                    <li
-                        className="hover:text-primary"
-                        key={index}
-                        onClick={() => setNavbarOpen(false)}
-                    >
-                        <NavLink href={link.path} title={link.title} />
-                    </li>
-                    ))}
-                </ul>
-                </div>
+                    <div className="absolute right-0 flex justify-end before:bg-gradient-to-r before:from-transparent before:to-secondary before:w-[35dvw] before:opacity-50 before:backdrop-blur-">
+                        <ul className="text-text h-[calc(100vh-3.5rem)] w-80 flex flex-col gap-5 justify-center items-center text-3xl z-10 bg-background md:hidden ">
+                            {navLinks.map((link, index) => (
+                            <li
+                                className="hover:text-primary"
+                                key={index}
+                                onClick={() => setNavbarOpen(false)}
+                            >
+                                <NavLink href={link.path} title={link.title} />
+                            </li>
+                            ))}
+                        </ul>
+                    </div>
             ) : null}
             </div>
         </nav>

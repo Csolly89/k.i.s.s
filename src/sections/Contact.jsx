@@ -28,31 +28,30 @@ const Contact = () => {
     
     return (
         <>
-            <div className="mb-12 pinStripe bg-secondary">
-                <div  className="px-4 mx-auto sm:px-6 lg:px-8 mt-20">
+            <div className="bg-gradient-to-b from-background to-secondary text-text">
+                <div  className="px-4 mx-auto sm:px-6 lg:px-8 mt-10 pb-10">
                     <div className="max-w-2xl mx-auto text-center">
-                        <h2 className="leading-tight text-background text-5xl">Lets get in touch!</h2>
+                        <h2 className="leading-tight text-text text-5xl">Lets get in touch!</h2>
                     </div>
 
-                    <div className="max-w-6xl mx-auto mt-5 overflow-hidden bg-gradient-to-tr from-slate-800 to-slate-500  rounded-md shadow-md lg:mt-8 ">
                         <div className="grid grid-cols-1 lg:grid-cols-5 ">
                             <form ref={form} onSubmit={sendEmail} className="lg:col-span-3 lg:col-start-2">
                                 <div className="p-6 sm:p-10">
-                                    <h3 className="text-5xl text-center">Send me a message</h3>
+                                    <h3 className="text-2xl text-center">Send me a message</h3>
                                     {/* action="#" */}
                                     <div  className="mt-8">
                                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-4">
                                             <div>
                                                 <label className="text-2xl"> Your name </label>
                                                 <div className="mt-2.5 relative">
-                                                    <input type="text"  name="user_name"  className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600" />
+                                                    <input type="text"  name="user_name"  className="block w-full px-4 py-4 text-text transition-all duration-200 border border-primary rounded-md bg-slate-100 bg-opacity-10 focus:outline-none focus:border-primary caret-accent" />
                                                 </div>
                                             </div>
 
                                             <div>
                                                 <label className="text-2xl"> Your email </label>
                                                 <div className="mt-2.5 relative">
-                                                    <input type="email" name="user_email" className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600" />
+                                                    <input type="email" name="user_email" className="block w-full px-4 py-4 text-text transition-all duration-200 border border-primary rounded-md bg-slate-100 bg-opacity-10 focus:outline-none focus:border-primary caret-accent" />
                                                 </div>
                                             </div>
 
@@ -61,20 +60,19 @@ const Contact = () => {
                                                 <div className="mt-2.5 relative">
                                                     <textarea
                                                         name="message"
-                                                        className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md resize-y bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
+                                                        className="block w-full px-4 py-4 text-text transition-all duration-200 border border-primary rounded-md bg-slate-100 bg-opacity-10 focus:outline-none focus:border-primary caret-accent" 
                                                         rows="4"
                                                     ></textarea>
                                                 </div>
                                             </div>
 
                                             <div className="sm:col-span-2">
-                                                <input type="submit" value="Send" className="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base text-white bg-blue-600 border border-transparent rounded-md focus:outline-none hover:bg-blue-700 focus:bg-blue-700"/>
+                                                <input type="submit" value="Send" className="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base text-background bg-primary border border-transparent rounded-md focus:outline-none hover:bg-amber-400"/>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </form>
-                        </div>
                     </div>
                 </div>
             </div>
