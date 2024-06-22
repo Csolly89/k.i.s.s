@@ -10,7 +10,7 @@ const About = () => {
     }
     return (
         <>
-            <section className="min-h-[30svh] bg-primary rounded-3xl relative bottom-8 overflow-hidden">
+            <section className="min-h-[30svh] bg-primary rounded-t-3xl overflow-hidden">
                 <div className="grid lg:grid-cols-12 grid-cols-1 h-full">
                     <div className="col-span-4 col-start-2 flex items-center">
                         <div className="">

@@ -8,7 +8,7 @@ const navLinks = [
         path: "#about",
     },
     {
-        title: "Experience",
+        title: "Services",
         path: "#exp",
     },
     {

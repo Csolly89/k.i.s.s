@@ -65,7 +65,7 @@ const Projects = () => {
 
     return (
         <>
-            <section className="bg-background text-text h-[80%]">
+            <section className="text-text h-[80%]">
                 <h1 className=" text-center text-4xl mt-10 font-Lora">Projects</h1>
                 <div className='flex flex-row justify-center text-2xl gap-8 mt-2'>
                     <TabButton selectTab={() => handleTabChange('higgins')} active={tab === 'higgins'}>1</TabButton>

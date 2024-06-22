@@ -9,16 +9,16 @@ import Projects from "./sections/Projects"
 function App() {
 
   return (
-    <div className="dark overflow-x-hidden">
-    <section className="fixed z-20 "> <Navbar /></section>
-      <div>
-        <section id="#" className=""> <Hero /> </section>
-        <section id="about" className="relative bottom-5" > <About /> </section>
-        <section id="exp" className="" > <Exp /> </section>
-        <section id="projects" className=""> <Projects /> </section>
-        <section id="contact" className=""> <Contact /> </section>
-      </div>
-    </div>
+      <main className="dark overflow-x-hidden bg-background pinStripe">
+        <section className="fixed z-20 "> <Navbar /></section>
+        <div>
+          <section id="#" className=""> <Hero /> </section>
+          <section id="about" className="" > <About /> </section>
+          <section id="exp" className="" > <Exp /> </section>
+          <section id="projects" className=""> <Projects /> </section>
+          <section id="contact" className=""> <Contact /> </section>
+        </div>
+      </main>
   )
 }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom"
 import Hulk from "../public/HulkProfile.png"
 import LI from "../public/LinkedIn_Logo.svg.png"
 import GH from "../public/Github.png"
@@ -20,7 +21,7 @@ const social = [
 
 const Hero = () => {
     return (
-        <section className='h-[100svh] bg-background '>
+        <section className='h-[100svh] bg-background pinStripe'>
             {/* first container with Header and buttons */}
             <div className="grid grid-cols-1 sm:grid-cols-12 mt-8 ">
                 <div className="col-span-7 place-self-center text-center sm:text-left mt-10">
@@ -35,8 +36,8 @@ const Hero = () => {
                         <div className='flex md:flex-row flex-col xl:justify-end gap-4 justify-center relative top-[10rem] lg:top-5 xl:mr-[10em] '>
                             <ul className='flex flex-row gap-5 justify-center'>
                                 {social.map((item, i) => (
-                                    <a className="" key={i} to={item.path} target="_blank" rel="noopener noreferrer">
-                                        <img className='aspect-auto h-10' src={item.pic} alt={item.alt} />
+                                    <a key={i} href={item.path} target="_blank" rel="noopener noreferrer">
+                                        <img className='aspect-auto h-12' src={item.pic} alt={item.alt} />
                                     </a>
                                 ))
                                 }

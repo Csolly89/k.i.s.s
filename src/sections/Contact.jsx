@@ -28,10 +28,10 @@ const Contact = () => {
     
     return (
         <>
-            <div className="mb-12 ">
+            <div className="mb-12 pinStripe bg-secondary">
                 <div  className="px-4 mx-auto sm:px-6 lg:px-8 mt-20">
                     <div className="max-w-2xl mx-auto text-center">
-                        <h2 className="leading-tight text-white text-5xl">Lets get in touch!</h2>
+                        <h2 className="leading-tight text-background text-5xl">Lets get in touch!</h2>
                     </div>
 
                     <div className="max-w-6xl mx-auto mt-5 overflow-hidden bg-gradient-to-tr from-slate-800 to-slate-500  rounded-md shadow-md lg:mt-8 ">

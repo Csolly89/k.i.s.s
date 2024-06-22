@@ -16,13 +16,22 @@
     
 }
 
+.pinStripe{
+    background-image: repeating-linear-gradient(
+        to right, transparent 0 49px, rgba(237, 237, 237, 0.02) 49px 50px
+        ),
+        repeating-linear-gradient(
+            to bottom, transparent 0 49px, rgba(237, 237, 237, 0.01) 49px 50px
+        );
+}
+
 @layer base {
     :root {
-        --text: #0f0401;
-        --background: #fff6f1;
-        --primary: #f75b11;
-        --secondary: #cffb82;
-        --accent: #81f94c;
+        --text: #080c09;
+    --background: #f9fbfa;
+    --primary: #336b45;
+    --secondary: #9dbda8;
+    --accent: #7eb991;
     }
     .dark {
         --text: #faf3e0;
