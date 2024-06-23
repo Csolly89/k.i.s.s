@@ -7,10 +7,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
     .hero {
         writing-mode: vertical-rl;
-        left: 1.3em;
+        left: 15rem;
         top: 6rem;
     }
     
