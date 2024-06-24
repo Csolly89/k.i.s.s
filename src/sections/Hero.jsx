@@ -17,7 +17,6 @@ const social = [
     }
 ]
 
-// className="text-transparent bg-clip-text bg-gradient-to-r from-green-950 via-green-800 to-green-500"
 
 const Hero = () => {
     return (
