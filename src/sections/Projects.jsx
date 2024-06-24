@@ -12,10 +12,10 @@ const projects = [
                     <h1 className="text-center text-3xl font-Hind underline underline-offset-8" > Higgins Excavation LLC</h1>
                 <div className='flex m-5 pb-10 md:mt-5 mt-20'>
                     <img className='w-[45vw] object-cover rounded-xl border-2 border-slate-800 mr-2' src={Higgins} alt="screenshot of Previous jobs" />
-                    <div className='flex-col content-center gap-2'>
+                    <div className='flex-col content-center'>
                         <p className=''> "A Single man excavation company looking for single page application website with SEO strategies and free email service to limit outoing costs to help bring in customers while maintaining low monthly costs."</p>
                         <a className=" font-Hind underline underline-offset-8 " href="https://higgins-excavation.onrender.com/">
-                            <h3> Live site</h3>
+                            <h3 className='py-5'> Live site</h3>
                         </a>
                     </div>
                 </div>

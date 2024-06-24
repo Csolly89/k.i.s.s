@@ -21,19 +21,17 @@ const navLinks = [
     },
 ];
 
-const Navbar = () => {
+const Navbar = ({ change }) => {
     const [navbarOpen, setNavbarOpen] = useState(false);
 
     return (
         <>
-        <nav className="fixed top-0 left-0 right-0 z-10 rounded-bl-lg rounded-br-lg text-background ">
+        <nav className="fixed top-0 left-0 right-0 z-40 rounded-bl-lg rounded-br-lg text-background ">
             <div className="flex flex-wrap items-center justify-between h-14 bg-gradient-to-tr from-background to-secondary border-b-2 border-primary rounded-br-2xl rounded-bl-2xl">
-                <a
-                    href={"/"}
-                    className="text-5xl text-text hover:text-primary pl-3 font-Alex"
-                >
+                <a href={"/"} className="text-5xl text-text hover:text-primary pl-3 font-Alex">
                     <h1>Solly.Dev</h1>
                 </a>
+                <button onClick={change} className="w-10 h-10 bg-secondary rounded-full xl:mr-[55dvw] ml-20 md:ml-0"></button> 
                 {/* main navbar links */}
                 <div className="menu hidden md:block md:w-auto" id="navbar">
                     <ul className="flex flex-row mr-5 justify-between gap-2 ">

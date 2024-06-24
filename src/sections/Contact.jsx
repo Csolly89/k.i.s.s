@@ -42,21 +42,21 @@ const Contact = () => {
                                     <div  className="mt-8">
                                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-4">
                                             <div>
-                                                <label className="text-2xl"> Your name </label>
+                                                <label className="text-xl"> Your name </label>
                                                 <div className="mt-2.5 relative">
                                                     <input type="text"  name="user_name"  className="block w-full px-4 py-4 text-text transition-all duration-200 border border-primary rounded-md bg-slate-100 bg-opacity-10 focus:outline-none focus:border-primary caret-accent" />
                                                 </div>
                                             </div>
 
                                             <div>
-                                                <label className="text-2xl"> Your email </label>
+                                                <label className="text-xl"> Your email </label>
                                                 <div className="mt-2.5 relative">
                                                     <input type="email" name="user_email" className="block w-full px-4 py-4 text-text transition-all duration-200 border border-primary rounded-md bg-slate-100 bg-opacity-10 focus:outline-none focus:border-primary caret-accent" />
                                                 </div>
                                             </div>
 
                                             <div className="sm:col-span-2">
-                                                <label className="text-2xl"> Message </label>
+                                                <label className="text-xl"> Message </label>
                                                 <div className="mt-2.5 relative">
                                                     <textarea
                                                         name="message"
@@ -67,7 +67,7 @@ const Contact = () => {
                                             </div>
 
                                             <div className="sm:col-span-2">
-                                                <input type="submit" value="Send" className="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base text-background bg-primary border border-transparent rounded-md focus:outline-none hover:bg-amber-400"/>
+                                                <input type="submit" value="Send" className="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base text-background bg-primary border border-transparent rounded-md focus:outline-none hover:bg-accent"/>
                                             </div>
                                         </div>
                                     </div>
