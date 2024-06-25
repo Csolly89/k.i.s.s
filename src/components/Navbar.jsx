@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import NavLink from "./Navlink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { MoonIcon, SunIcon } from "@heroicons/react/24/outline";
 
 const navLinks = [
     {
@@ -21,17 +22,32 @@ const navLinks = [
     },
 ];
 
-const Navbar = ({ change }) => {
+const Navbar = ({ change, dark }) => {
     const [navbarOpen, setNavbarOpen] = useState(false);
 
     return (
         <>
-        <nav className="fixed top-0 left-0 right-0 z-40 rounded-bl-lg rounded-br-lg text-background ">
-            <div className="flex flex-wrap items-center justify-between h-14 bg-gradient-to-tr from-background to-secondary border-b-2 border-primary rounded-br-2xl rounded-bl-2xl">
+        <nav className="fixed top-0 left-0 right-0 z-40 rounded-bl-lg rounded-br-lg text-background">
+            <div className="flex items-center justify-between bg-gradient-to-tr from-background to-secondary border-b-2 border-primary rounded-b-2xl py-2">
                 <a href={"/"} className="text-5xl text-text hover:text-primary pl-3 font-Alex">
                     <h1>Solly.Dev</h1>
                 </a>
-                <button onClick={change} className="w-10 h-10 bg-secondary rounded-full xl:mr-[55dvw] ml-20 md:ml-0"></button> 
+                {!dark ? (
+                    <button
+                        onClick={change}
+                        className="flex items-center p-2 border rounded-full border-text text-text hover:text-primary hover:rounded-xl hover:border-primary xl:ml-[60vw] ml-[35vw]"
+                    >
+                        <SunIcon className="h-5 w-5" />
+                    </button>
+                    ) : (
+                    <button
+                        onClick={change}
+                        className="flex items-center p-2 border rounded-full border-primary text-text hover:text-accent hover:rounded-xl hover:border-accent xl:ml-[60vw] ml-[30vw]"
+                    >
+                        <MoonIcon className="h-5 w-5" />
+                    </button>
+                    )}
+
                 {/* main navbar links */}
                 <div className="menu hidden md:block md:w-auto" id="navbar">
                     <ul className="flex flex-row mr-5 justify-between gap-2 ">
@@ -49,14 +65,14 @@ const Navbar = ({ change }) => {
                     {!navbarOpen ? (
                     <button
                         onClick={() => setNavbarOpen(true)}
-                        className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+                        className="flex items-center px-2 py-2 border rounded-xl border-primary text-text hover:text-accent hover:border-accent"
                     >
                         <Bars3Icon className="h-5 w-5" />
                     </button>
                     ) : (
                     <button
                         onClick={() => setNavbarOpen(false)}
-                        className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+                        className="flex items-center px-2 py-2 border rounded-xl border-primary text-text hover:text-accent hover:border-accent"
                     >
                         <XMarkIcon className="h-5 w-5" />
                     </button>

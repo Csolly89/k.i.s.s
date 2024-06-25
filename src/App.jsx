@@ -20,9 +20,9 @@ function App() {
     <>
     {dark ? (
       <main className="dark overflow-x-hidden bg-background pinStripe">
-        <section className="fixed z-20 "> <Navbar change={handleDarkChange} /></section>
+        <section className="fixed z-20 "> <Navbar change={handleDarkChange} dark={dark} /></section>
         <div>
-          <section id="#" className=""> <Hero /> </section>
+          <section id="#" className=""> <Hero dark={dark} /> </section>
           <section id="about" className="" > <About /> </section>
           <section id="exp" className="" > <Exp /> </section>
           <section id="projects" className=""> <Projects /> </section>
@@ -32,9 +32,9 @@ function App() {
     )
   : (
     <main className="overflow-x-hidden bg-background pinStripe">
-        <section className="fixed z-20 "> <Navbar change={handleDarkChange} /></section>
+        <section className="fixed z-20 "> <Navbar change={handleDarkChange} dark={dark} /></section>
         <div>
-          <section id="#" className=""> <Hero /> </section>
+          <section id="#" className=""> <Hero dark={dark} /> </section>
           <section id="about" className="" > <About /> </section>
           <section id="exp" className="" > <Exp /> </section>
           <section id="projects" className=""> <Projects /> </section>

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from "react-router-dom"
 import Hulk from "../public/HulkProfile.png"
 import LI from "../public/LinkedIn_Logo.svg.png"
 import GH from "../public/Github.png"
+import Thanos from "../public/Thanos.png"
 
 const social = [
     {
@@ -18,7 +18,7 @@ const social = [
 ]
 
 
-const Hero = () => {
+const Hero = ({ dark }) => {
     return (
         <section className='h-[100svh] bg-background pinStripe'>
             {/* first container with Header and buttons */}
@@ -53,7 +53,8 @@ const Hero = () => {
                 {/* 2nd container with Logo/img  */}
                 <div className="xl:col-span-5 lg:col-span-3 col-span-1 place-self-center xl:pr-[15%]  xl:pt-10 relative bottom-[34em] md:bottom-0 ">
                     <div className="rounded-full bg-gradient-to-br from-background to-secondary w-[80vw] md:w-[60vw] xl:w-[45vw] relative">
-                    <img className='bg-gradient-to-t from-black via-slate-900 to-transparent rounded-b-3xl aspect-auto ' src={Hulk} alt="Hulk figure with arms crossed" />
+                        {!dark ? (<img className='bg-gradient-to-t from-black via-slate-900 to-transparent rounded-b-3xl aspect-auto ' src={Hulk} alt="Hulk figure with arms crossed" />) : (<img className='bg-gradient-to-t from-black via-slate-900 to-transparent rounded-b-3xl aspect-auto' src={Thanos} alt="Hulk figure with arms crossed" />) }
+                    {/* <img className='bg-gradient-to-t from-black via-slate-900 to-transparent rounded-b-3xl aspect-auto ' src={Hulk} alt="Hulk figure with arms crossed" /> */}
 					</div>
                 </div>
             </div>
