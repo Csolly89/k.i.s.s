@@ -35,14 +35,14 @@ const Navbar = ({ change, dark }) => {
                 {!dark ? (
                     <button
                         onClick={change}
-                        className="flex items-center p-2 border rounded-full border-text text-text hover:text-primary hover:rounded-xl hover:border-primary xl:ml-[60vw] ml-[35vw]"
+                        className="flex items-center p-2 border rounded-full border-primary text-primary hover:text-text hover:rounded-xl hover:border-text xl:ml-[60vw] md:ml-[62vw] ml-[30vw]"
                     >
                         <SunIcon className="h-5 w-5" />
                     </button>
                     ) : (
                     <button
                         onClick={change}
-                        className="flex items-center p-2 border rounded-full border-primary text-text hover:text-accent hover:rounded-xl hover:border-accent xl:ml-[60vw] ml-[30vw]"
+                        className="flex items-center p-2 border rounded-full border-accent text-accent hover:text-text hover:rounded-xl hover:border-text xl:ml-[60vw] md:ml-[62vw] ml-[30vw]"
                     >
                         <MoonIcon className="h-5 w-5" />
                     </button>
@@ -65,7 +65,7 @@ const Navbar = ({ change, dark }) => {
                     {!navbarOpen ? (
                     <button
                         onClick={() => setNavbarOpen(true)}
-                        className="flex items-center px-2 py-2 border rounded-xl border-primary text-text hover:text-accent hover:border-accent"
+                        className="flex items-center px-2 py-2 border rounded-xl border-text text-text hover:text-accent hover:border-accent"
                     >
                         <Bars3Icon className="h-5 w-5" />
                     </button>

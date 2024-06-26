@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 
 
 const Contact = () => {
@@ -31,32 +31,32 @@ const Contact = () => {
             <div className="bg-gradient-to-b from-background to-secondary text-text">
                 <div  className="px-4 mx-auto sm:px-6 lg:px-8 mt-10 pb-10">
                     <div className="max-w-2xl mx-auto text-center">
-                        <h2 className="leading-tight text-text text-5xl">Lets get in touch!</h2>
+                        <h2 className="leading-tight text-text text-5xl font-Lora">Lets get in touch!</h2>
                     </div>
 
                         <div className="grid grid-cols-1 lg:grid-cols-5 ">
                             <form ref={form} onSubmit={sendEmail} className="lg:col-span-3 lg:col-start-2">
                                 <div className="p-6 sm:p-10">
-                                    <h3 className="text-2xl text-center">Send me a message</h3>
+                                    <h3 className="text-2xl text-center font-Lora">Send me a message</h3>
                                     {/* action="#" */}
                                     <div  className="mt-8">
                                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-4">
                                             <div>
-                                                <label className="text-xl"> Your name </label>
+                                                <label className="text-xl font-Chivo"> Your name </label>
                                                 <div className="mt-2.5 relative">
                                                     <input type="text"  name="user_name"  className="block w-full px-4 py-4 text-text transition-all duration-200 border border-primary rounded-md bg-slate-100 bg-opacity-10 focus:outline-none focus:border-primary caret-accent" />
                                                 </div>
                                             </div>
 
                                             <div>
-                                                <label className="text-xl"> Your email </label>
+                                                <label className="text-xl font-Chivo"> Your email </label>
                                                 <div className="mt-2.5 relative">
                                                     <input type="email" name="user_email" className="block w-full px-4 py-4 text-text transition-all duration-200 border border-primary rounded-md bg-slate-100 bg-opacity-10 focus:outline-none focus:border-primary caret-accent" />
                                                 </div>
                                             </div>
 
                                             <div className="sm:col-span-2">
-                                                <label className="text-xl"> Message </label>
+                                                <label className="text-xl font-Chivo"> Message </label>
                                                 <div className="mt-2.5 relative">
                                                     <textarea
                                                         name="message"
@@ -66,7 +66,7 @@ const Contact = () => {
                                                 </div>
                                             </div>
 
-                                            <div className="sm:col-span-2">
+                                            <div className="sm:col-span-2 font-Chivo ">
                                                 <input type="submit" value="Send" className="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base text-background bg-primary border border-transparent rounded-md focus:outline-none hover:bg-accent"/>
                                             </div>
                                         </div>

@@ -36,13 +36,13 @@ const Hero = ({ dark }) => {
                                     {social.map((item, i) => (
                                         <li key={i}>
                                             <a href={item.path} target="_blank" rel="noopener noreferrer">
-                                                <img className='aspect-auto w-[10rem] drop-shadow-lg' src={item.pic} alt={item.alt} />
+                                                <img className='aspect-auto w-[10rem] drop-shadow-lg hover:border-b-2 hover:border-b-accent' src={item.pic} alt={item.alt} />
                                             </a>
                                         </li>
                                     ))}
                                 </ul>
-                                <button className="rounded-3xl bg-gradient-to-tr from-secondary to-primary p-2 border-2 border-text border-opacity-0 m-3 xl:mr-10">
-                                    <span className="text-background">
+                                <button className="rounded-3xl bg-gradient-to-tr from-secondary to-primary p-2 border-2 border-text m-3 xl:mr-10 hover:border-primary">
+                                    <span className="text-background font-Hind ">
                                         Download Cv
                                     </span>
                                 </button>
@@ -52,8 +52,8 @@ const Hero = ({ dark }) => {
                 </div>
                 {/* 2nd container with Logo/img  */}
                 <div className="xl:col-span-5 lg:col-span-3 col-span-1 place-self-center xl:pr-[15%]  xl:pt-10 relative bottom-[34em] md:bottom-0 ">
-                    <div className="rounded-full bg-gradient-to-br from-background to-secondary w-[80vw] md:w-[60vw] xl:w-[45vw] relative">
-                        {!dark ? (<img className='bg-gradient-to-t from-black via-slate-900 to-transparent rounded-b-3xl aspect-auto ' src={Hulk} alt="Hulk figure with arms crossed" />) : (<img className='bg-gradient-to-t from-black via-slate-900 to-transparent rounded-b-3xl aspect-auto' src={Thanos} alt="Hulk figure with arms crossed" />) }
+                    <div className="rounded-full bg-gradient-to-br from-background to-secondary w-[80vw] md:w-[60vw] xl:w-[30vw] relative">
+                        {!dark ? (<img className='bg-gradient-to-t from-black via-slate-900 to-transparent rounded-b-3xl aspect-auto ' src={Hulk} alt="Hulk figure with arms crossed" />) : (<img className='bg-gradient-to-t from-black via-slate-900 to-transparent rounded-b-3xl aspect-auto w-[40em]' src={Thanos} alt="Hulk figure with arms crossed" />) }
                     {/* <img className='bg-gradient-to-t from-black via-slate-900 to-transparent rounded-b-3xl aspect-auto ' src={Hulk} alt="Hulk figure with arms crossed" /> */}
 					</div>
                 </div>
