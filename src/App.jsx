@@ -7,7 +7,7 @@ import Exp from "./sections/Exp"
 import Projects from "./sections/Projects"
 
 function App() {
-  const [dark, setDark] = useState(true)
+  const [dark, setDark] = useState(false)
   const [isPending, startTransition] = useTransition()
 
   const handleDarkChange = () => {
